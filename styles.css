@@ -1,11 +1,47 @@
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body, div, button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  color: #35495e;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message h1 {
+  text-align: center;
+}
+
+.mesage button {
+  border: none;
+  background-color: #41b883;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+}
+
+.message button {
+  display: block;
+  appearance: none;
+  border: none;
+  background-color: #41b883;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+}
+
+.message button:hover {
+  background-color: #3aa776;
 }
