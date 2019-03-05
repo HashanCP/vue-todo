@@ -13,7 +13,7 @@ body, div, button {
 
 #app {
   width: 40%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .message {
@@ -26,22 +26,45 @@ body, div, button {
   text-align: center;
 }
 
-.mesage button {
-  border: none;
-  background-color: #41b883;
-  padding: 1rem 2rem;
-  border-radius: .4rem;
+.todo-form {
+  display: flex;
+  align-items: center;
 }
 
-.message button {
+.todo-form input {
   display: block;
-  appearance: none;
+  outline: none;
+  border: .2rem solid burlywood;
+  border-radius: .4rem;
+  flex-grow: 1;
+  padding: 1rem .4rem;
+  font-size: 1.8rem;
+  margin: 0 2rem 0 0;
+}
+
+button {
+  display: block;
   border: none;
+  outline: none;
   background-color: #41b883;
   padding: 1rem 2rem;
   border-radius: .4rem;
 }
 
-.message button:hover {
+button:hover {
   background-color: #3aa776;
+}
+
+ol {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+ol li {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  background-color: burlywood;
+  border-radius: .4rem;
+  padding: .5rem 1rem;
 }

@@ -9,9 +9,21 @@
   </head>
   <body>
     <div id="app">
-      <div class="message">
-        <h1 :title="message">{{ message }}</h1>
-        <button @click="changeTitle">Click Me!</button>
+      <div class="todo-page">
+        <form class="todo-form" @submit.prevent="addNewTodoItem">
+          <input v-model="newTodoItem" type="text" />
+          <button>Add</button>
+        </form>
+        <ol class="todo-list">
+          <li v-for="todo in todos">
+            <label>
+              <input type="checkbox" v-on:change="toggle(todo)" v-bind:checked="todo.done"/>
+
+              <del v-if="todo.done">{{ todo.text }}</del>
+              <ins v-else>{{ todo.text }}</ins>
+            </label>
+          </li>
+        </ol>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
